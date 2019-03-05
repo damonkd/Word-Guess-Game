@@ -1,0 +1,71 @@
+body{
+    text-align: center
+    
+}
+
+div{
+    display: inline-block
+    
+    
+    
+}
+
+h1{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    padding: 20px;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       font-size: 25px;
+       padding: 20px;
+       color: darkblue;
+   }
+
+   #wins{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    padding: 20px;
+    color: darkblue;
+   }
+
+   #display{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    padding: 20px;
+    color: darkblue;
+   }
+
+   #counted{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    padding: 20px;
+    color: darkblue;
+   }
+ 
+   #checked{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    padding: 20px;
+    color: darkblue;
+   }
+
+   #title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    padding: 20px;
+    color: darkred;
+
+   }
+
+   #image{
+       float: left;
+       padding-left: 100px;
+       padding-top: 50px;
+       }
+
+    #boxa{
+        width: 500px;
+        padding-right: 250px;
+    }

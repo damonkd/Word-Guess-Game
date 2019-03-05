@@ -1,5 +1,5 @@
 //console.log("hello world");
-var kaiju = ["rodan","godzilla","mothra","ghidorah","gigan" ,"biollante", "kamacuras", "Kumonga"];
+var kaiju = ["rodan","godzilla","mothra","ghidorah","gigan" ,"biollante", "kamacuras", "kumonga"];
 //var kaiju = ["ghidorah"];
 console.log(kaiju);
 var wins = 0;
@@ -68,45 +68,49 @@ function checkLetter(){
     if(testing == false){
     
         lettersChecked += letter + " "
-        document.getElementById("checked").innerHTML = lettersChecked;
+        document.getElementById("checked").textContent = lettersChecked;
     }
+    
+    //deincrements guesses on false
     if(guessTest == false){
         guessesRemaining --;
         remaining();
 
     }
-    //var m =""
     
+    // checks if word is solved
     for(var z = 0; z < hidden.length; z++){
         //m = hidden[z];
         if(hidden[z] == "_"){
             winTest ++;
         }
-    //else winTest = false;
+    
     
     }
-    console.log(winTest)  ;  
-    console.log(hidden.join());
+    
         
+        //checks for win and reinitializes
         if(winTest == 0){
+        document.getElementById("title").textContent = hidden.join("");
         wins ++;
         win();
         hidden =[];
         selectWord();
         displayHiddenWord();
         lettersChecked="";
-        document.getElementById("checked").innerHTML = lettersChecked;
+        document.getElementById("checked").textContent = lettersChecked;
         toCheck = kaiju[kaijuIndex];
         counter = 0;
+        
 
     }
-
+    //checks for loss and reinitilizes
     if(guessesRemaining == 0){
         hidden =[];
         selectWord();
         displayHiddenWord();
         lettersChecked="";
-        document.getElementById("checked").innerHTML = lettersChecked;
+        document.getElementById("checked").textContent = lettersChecked;
         toCheck = kaiju[kaijuIndex];
         counter = 0;
         guessesRemaining = 15;
@@ -124,7 +128,7 @@ function checkLetter(){
 //refeshes word with found charactors
 function updateWord(){
     
-    document.getElementById("display").innerHTML = hidden.join(" ");
+    document.getElementById("display").textContent = hidden.join(" ");
     //console.log(hidden);
 }
 
